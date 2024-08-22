@@ -22,6 +22,7 @@
           colors: {
             clifford: '#da373d',
             primary: '#ABEF5F',
+            section: '#f4f4f4',
           }
         }
       }
@@ -42,7 +43,7 @@
     <nav class="w-11/12 mx-auto pt-5">
       <div class="navbar ">
         <div class="navbar-start">
-          
+
           <a class="btn btn-ghost text-xl font-bold">
             <i class="fa-solid fa-arrow-right-long bg-primary rounded-full p-1 -rotate-45"></i>
             <span class="text-2xl">Rinterio</span>
@@ -64,7 +65,8 @@
             <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
               <i class="fa-solid fa-bars text-xl bg-white px-2 py-1 rounded-full"></i>
             </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-3">
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-3">
               <li><a class="font-bold">Home</a></li>
               <li><a class="font-medium">Services</a></li>
               <li><a class="font-medium">Portfolio</a></li>
@@ -87,15 +89,17 @@
         </div>
       </div>
     </nav>
-    <!-- banner section -->                
-     <section class="lg:w-4/5 mx-auto mb-12">
+    <!-- banner section -->
+    <section class="lg:w-4/5 mx-auto mb-12">
       <div class="hero">
         <div class="hero-content text-center">
           <div class="">
             <img class="mx-auto" src="/assets/banner.png" alt="">
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight sm:leading-tight lg:leading-tight">A barn house of this design has a striking appearance</h1>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight sm:leading-tight lg:leading-tight">
+              A barn house of this design has a striking appearance</h1>
             <p class="py-6 sm:w-10/12 sm:mx-auto">
-              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+              wood, sleek metal accents, and large windows that flood the space with natural light.
             </p>
             <div>
               <a class="btn w-full sm:w-max rounded-full bg-primary bg-opacity-60">
@@ -106,11 +110,64 @@
           </div>
         </div>
       </div>
-     </section>
+    </section>
   </header>
   <!-- main section -->
   <main>
-
+    <!-- About us Section -->
+    <section class="bg-section py-10">
+      <img class=" hidden pl-20 lg:block " src="./assets/Vector.png" alt="">
+      <!-- section container -->
+      <div class=" lg:w-4/5 mx-auto pt-4">
+        <!-- main contents -->
+        <div class="hero bg-base-200">
+          <div class="hero-content flex-col lg:flex-row lg:gap-8">
+            <div class="flex-1">
+              <!-- section btn -->
+              <div class="mb-5 flex justify-center lg:justify-start">
+                <a class="bg-white text-sm px-3 py-1 rounded-full space-x-1" href="#">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                  <span>About Us</span>
+                </a>
+              </div>
+              <h2 class="text-3xl md:text-4xl font-black text-center lg:leading-tight lg:text-left">We design
+                thoughtful, liveable spaces</h2>
+              <p class="py-6 text-center lg:text-left">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal accents.
+              </p>
+              <!-- cards container -->
+              <div class="">
+                <!-- card 1 -->
+                <div class="bg-white p-5 rounded-md flex gap-5 mb-5">
+                  <!-- card img -->
+                  <img src="./assets/commercial.png" alt="">
+                  <!-- card  text content -->
+                  <div>
+                    <h4 class="font-bold mb-2">Commercial</h4>
+                    <p class="text-sm">The barn house captivates with its blend of rustic charm and modern.</p>
+                  </div>
+                </div>
+                <!-- card 2 -->
+                <div class="bg-white p-5 rounded-md flex gap-5">
+                  <!-- card img -->
+                  <img src="./assets/residential.png" alt="">
+                  <!-- card  text content -->
+                  <div>
+                    <h4 class="font-bold mb-2">Residential</h4>
+                    <p class="text-sm">The barn house captivates with its blend of rustic charm and modern.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- img content -->
+            <div class="flex-1">
+              <img src="./assets/Rectangle.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <!-- footer section -->
   <footer></footer>

@@ -23,6 +23,9 @@
             clifford: '#da373d',
             primary: '#ABEF5F',
             section: '#f4f4f4',
+          },
+          backgroundImage: {
+            'contact-form': "url('./assets/bg.jpg')",
           }
         }
       }
@@ -229,15 +232,48 @@
 
 
     <!-- Form: Contact section START-->
-    <section class="w-11/12 lg:w-4/5 mx-auto mb-10">
-
+    <section class="py-16 bg-contact-form bg-no-repeat bg-cover">
+      <!-- section container -->
+      <div class="w-11/12 md:w-4/6 lg:w-1/2 mx-auto">
+        <!-- section btn -->
+        <div class="mb-5 flex justify-center">
+          <a class="bg-primary bg-opacity-50 text-sm px-3 py-1 rounded-full space-x-1" href="#">
+            <i class="fa-solid fa-arrow-right-long"></i>
+            <span>Let's Connect</span>
+          </a>
+        </div>
+        <!-- btn end -->
+        <!-- contents -->
+        <div class="mb-5">
+          <h2 class="text-3xl md:text-4xl font-black text-center mb-6 tracking-tight">Let’s Discuss Next Project
+          </h2>
+          <p class="text-center mx-auto">The barn house captivates with its blend of rustic charm and modern
+            sophistication,
+            featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <!-- contact form -->
+        <form action="" class="space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input type="text" placeholder="First Name*" required class="input w-full rounded-full" />
+            <input type="text" placeholder="Last Name*" class="input w-full rounded-full" />
+            <input type="text" placeholder="Phone Number*" class="input w-full rounded-full" />
+            <input type="text" placeholder="Email Number*" class="input w-full rounded-full" />
+          </div>
+          <textarea class="textarea w-full rounded-2xl pb-20" placeholder="Write your message here"></textarea>
+          <!-- submit btn -->
+          <div class="rounded-full text-center bg-primary py-2 px-4 cursor-pointer">
+            <input type="submit" class="font-bold" value="Send Mail">
+            <i class="fa-solid fa-arrow-right-long bg-black text-white rounded-full p-1 -rotate-45"></i>
+          </div>
+        </form>
+      </div>
     </section>
     <!-- Form: Contact section END-->
   </main>
   <!-- footer section -->
   <footer class="footer footer-center bg-[#1C1C1C] p-10">
     <!-- footer contents -->
-     <div class="lg:w-4/6 mx-auto">
+    <div class="lg:w-4/6 mx-auto">
       <aside>
         <!-- brand btn -->
         <div class="flex justify-center mb-5">
@@ -246,7 +282,8 @@
             <span class="text-2xl text-white">Rinterio</span>
           </a>
         </div>
-        <p class="text-[#737373] md:w-4/6 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+        <p class="text-[#737373] md:w-4/6 mx-auto">The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring
           weathered wood, sleek metal accents.</p>
       </aside>
       <nav class="my-6">
@@ -259,11 +296,11 @@
         </ul>
       </nav>
       <!-- footer btn -->
-        <a class="w-full sm:w-fit rounded-full bg-primary py-2 px-4">
-          <span class="font-bold">Book Consult</span>
-          <i class="fa-solid fa-arrow-right-long bg-black text-white rounded-full p-1 -rotate-45"></i>
-        </a>
-     </div>
+      <a class="w-full sm:w-fit rounded-full bg-primary py-2 px-4">
+        <span class="font-bold">Book Consult</span>
+        <i class="fa-solid fa-arrow-right-long bg-black text-white rounded-full p-1 -rotate-45"></i>
+      </a>
+    </div>
   </footer>
 </body>
 

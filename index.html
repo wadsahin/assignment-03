@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rinterio Real Estate</title>
+  <title>Rinterio architecture design</title>
   <!-- google fonts cdn -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -139,7 +139,7 @@
                 modern sophistication, featuring weathered wood, sleek metal accents.
               </p>
               <!-- cards container -->
-              <div class="">
+              <div>
                 <!-- card 1 -->
                 <div class="bg-white p-5 rounded-md flex gap-5 mb-5">
                   <!-- card img -->
@@ -244,7 +244,8 @@
             <!-- card row 1 -->
             <div class="grid lg:grid-cols-6 gap-5">
               <!-- card 1 -->
-              <div class="bg-white col-span-1 lg:col-span-4 border rounded-lg p-5 grid lg:grid-cols-3 items-cente gap-5">
+              <div
+                class="bg-white col-span-1 lg:col-span-4 border rounded-lg p-5 grid lg:grid-cols-3 items-cente gap-5">
                 <!-- img col -->
                 <div class="col-span-1">
                   <img class="w-full sm:w-fit h-full" src="./assets/img1.png" alt="">
@@ -275,7 +276,8 @@
                 <img class="w-full sm:w-fit h-full" src="./assets/img3.png" alt="">
               </div>
               <!-- card 4 -->
-              <div class="bg-white col-span-1 lg:col-span-3 order-2 sm:order-2 border rounded-lg p-5 grid lg:grid-cols-3 gap-5">
+              <div
+                class="bg-white col-span-1 lg:col-span-3 order-2 sm:order-2 border rounded-lg p-5 grid lg:grid-cols-3 gap-5">
                 <!-- img col -->
                 <div class="col-span-1">
                   <img class="w-full sm:w-fit h-full" src="./assets/img4.png" alt="">
@@ -305,8 +307,123 @@
     <!-- challenges: Latest Portfolio Section END -->
 
     <!-- Challenges: Unique section START-->
-    <section class="w-11/12 lg:w-4/5 mx-auto">
+    <section class="w-11/12 lg:w-4/5 mx-auto py-12">
+      <!-- section btn -->
+      <div class="mb-6 flex justify-center">
+        <a class="bg-primary bg-opacity-50 text-sm font-bold px-3 py-1 rounded-full space-x-1" href="#">
+          <i class="fa-solid fa-arrow-right-long"></i>
+          <span>Our Client's Reviews</span>
+        </a>
+      </div>
+      <!-- btn end -->
+      <!-- contents -->
+      <div>
+        <h2 class="text-3xl md:text-4xl font-black text-center mb-12">
+          Happy Client's Ratings
+        </h2>
+        <p class="text-center md:w-3/5 mx-auto">
 
+        </p>
+        <!-- cards carousel start -->
+        <div class="w-11/12 lg:w-1/2 mx-auto flex justify-center gap-14">
+          <!-- carousel 1 -->
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full bg-white rounded-xl">
+              <!-- card -->
+              <div class="w-full">
+                <!-- contents -->
+                <div class="w-4/6 mx-auto py-10 space-y-4">
+                  <img class="w-1/2 mx-auto" src="./assets/clients/client_1.png" alt="">
+                  <h4 class="text-xl font-bold text-center">Mr. Imram</h4>
+                  <div class="flex justify-center gap-1">
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                  </div>
+                  <p class="text-center">
+                    Their Services, Work Process, and Technology are very impressive and insightful. We so much happy to work with them.
+                  </p>
+                </div>
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full bg-white rounded-xl">
+              <div class="w-full">
+                <!-- contents -->
+                <div class="w-4/6 mx-auto py-10 space-y-4">
+                  <img class="w-1/2 mx-auto" src="./assets/clients/client_2.png" alt="">
+                  <h4 class="text-xl font-bold text-center">Abdullah</h4>
+                  <div class="flex justify-center gap-1">
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                  </div>
+                  <p class="text-center">
+                    Their Services, Work Process, and Technology are very impressive and insightful. We so much happy to work with them.
+                  </p>
+                </div>
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full bg-white rounded-xl">
+              <div class="w-full">
+                <!-- contents -->
+                <div class="w-4/6 mx-auto py-10 space-y-4">
+                  <img class="w-1/2 mx-auto" src="./assets/clients/client_3.png" alt="">
+                  <h4 class="text-xl font-bold text-center">Yasin</h4>
+                  <div class="flex justify-center gap-1">
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                  </div>
+                  <p class="text-center">
+                    Their Services, Work Process, and Technology are very impressive and insightful. We so much happy to work with them.
+                  </p>
+                </div>
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full bg-white rounded-xl">
+              <div class="w-full">
+                <!-- contents -->
+                <div class="w-4/6 mx-auto py-10 space-y-4">
+                  <img class="w-1/2 mx-auto" src="./assets/clients/client_4.png" alt="">
+                  <h4 class="text-xl font-bold text-center">A. Rahman</h4>
+                  <div class="flex justify-center gap-1">
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                    <i class="fa-solid fa-star text-yellow-500"></i>
+                  </div>
+                  <p class="text-center">
+                    Their Services, Work Process, and Technology are very impressive and insightful. We so much happy to work with them.
+                  </p>
+                </div>
+              </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+          <!-- carousel end -->
+        </div>
     </section>
     <!-- Challenges: Unique section END-->
 
